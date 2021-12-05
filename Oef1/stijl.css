@@ -1,0 +1,51 @@
+#page, #pageheader, #pagenav, #pagenavul, #articlecenter, #asideright{
+    margin:0;
+    padding:0;
+}
+
+#page{
+    width:1200px;
+    margin:auto;
+}
+
+#pagefooter{
+    margin-top: 2em;
+}
+
+#pageheader{
+    border-bottom:black 3px solid;
+    border-top: black 3px solid;
+}
+
+
+#pageheader,  #pagenav{
+    margin-top:1em;
+    margin-bottom:1em;
+}
+
+
+#pageheader, #pagefooter{
+    text-align: center;
+}
+
+
+#pagenav li{
+    border:black solid thin;
+    vertical-align: middle;
+    padding-top:0.8em;
+}
+
+#pagenav a{
+    margin:0;
+    padding:0;
+    height:2em;
+    text-decoration:none;
+    text-align: center;
+    color:black;
+}
+
+
+#articlecenter figure img{
+    max-width: 100%;
+    height: auto;
+}
