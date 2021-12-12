@@ -45,7 +45,30 @@
 }
 
 
-#articlecenter figure img{
-    max-width: 100%;
-    height: auto;
+#asideright{
+    float: left;
+    width: calc(1200px * 0.3);
+}
+
+@media only screen and (max-width: 1200px) {
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #page {
+        position: fixed;
+    }
+
+    #pagenav li{
+        width: calc(100% / 4 - 2%);
+        display: inline-block;
+    }
+}
+
+
+a:hover{
+    background-color: #32a887;
 }
