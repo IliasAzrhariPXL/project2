@@ -17,6 +17,7 @@ td{
     text-align: center;
 }
 
+/* zorgt voor een afwisseling van de juiste kleuren op de juiste plaats */
 table tr:nth-child(even) td{
     background-color: #3298a8;
 }
