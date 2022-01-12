@@ -1,0 +1,26 @@
+#iden, #sco, #tijd, #opm{
+    width: 100px;
+    padding: 2px;
+    text-align: right;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+#identificatie, #opmerking, #score{
+    width: 300px;
+    padding: 2px;
+}
+#submit{
+    width: 300px;
+    display: inline-block;
+    margin-left: 110px;
+    margin-top: 20px;
+}
+
+#opm{
+    float: left;
+}
+textarea{
+    height: 75px;
+    margin-left: 3px;
+}
