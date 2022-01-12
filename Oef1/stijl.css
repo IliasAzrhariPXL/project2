@@ -17,7 +17,6 @@
     border-top: black 3px solid;
 }
 
-
 #pageheader,  #pagenav{
     margin-top:1em;
     margin-bottom:1em;
@@ -28,12 +27,14 @@
     text-align: center;
 }
 
-
 #pagenav li{
     border:black solid thin;
     vertical-align: middle;
-    padding-top:0.8em;
+    padding-top:0.6em;
+    padding-bottom:0.6em;
+    text-align: center;
 }
+
 
 #pagenav a{
     margin:0;
@@ -44,31 +45,87 @@
     color:black;
 }
 
-
-#asideright{
+#articlecenter{
     float: left;
-    width: calc(1200px * 0.3);
+    width: 70%;
 }
 
-@media only screen and (max-width: 1200px) {
-    img{
-        width: 100%;
-        height: auto;
-    }
+#asideright {
+    width: 30%;
+    float: right;
 }
 
-@media only screen and (max-width: 1200px) {
-    #page {
-        position: fixed;
-    }
+li{
+    display: block;
+    float: left;
+    width: 140px;
+    text-align: center;
+    margin-left: 2px;
+}
 
+#pagefooter{
+    clear: both;
+}
+
+li:hover{
+    background-color: #32a887;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+/* onderstaande media-query zorgt voor de weergave van het scherm bij breedte kleiner dan 1200px*/
+@media only screen and (max-width: 1200px) {
     #pagenav li{
         width: calc(100% / 4 - 2%);
         display: inline-block;
     }
+
+    #articlecenter{
+        width: 70%;
+        float: left;
+    }
+
+    #asideright{
+        width: 30%;
+        float: right;
+    }
 }
 
 
-a:hover{
-    background-color: #32a887;
+/* onderstaande media-query zorgt voor de weergave van het scherm bij breedte kleiner dan 900px*/
+@media only screen and (max-width: 900px) {
+    #page{
+        width: auto;
+    }
+
+    #pagenav li{
+        width: 46%;
+    }
+
+    #articlecenter{
+        float: none;
+    }
+
+    #asideright{
+        width: 70%;
+        float: none;
+    }
+
 }
+
+/* onderstaande media-query zorgt voor de weergave van het scherm bij breedte kleiner dan 600px*/
+@media only screen and (max-width: 600px) {
+    #asideright, img, #pagefooter{
+      display: none;
+    }
+
+    #pagenav li{
+        width: 69%;
+    }
+}
+
+
+
